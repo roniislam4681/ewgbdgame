@@ -349,80 +349,191 @@
   <button id="spinBtn">স্পিন করুন</button>
 </div>
 
-<div class="popup" id="popup" style="display:none;">
-  <span>অভিনন্দন! আপনি জিতেছেন <strong id="prize-name"></strong></span>
-  <button onclick="closePopup()">Redeem Now</button>
-</div>
 
-<!-- দ্বিতীয় পপআপ -->
-<div id="secondPopup" style="
-    display:none; 
-    position: fixed; 
-    top: 20px; 
-    left: 50%; 
-    transform: translateX(-50%);
-    background: #fbc02d;
-    padding: 15px 25px;
-    border-radius: 30px;
-    font-weight: 600;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    z-index: 300;
-    color: #222;
-    text-align: center;
-  ">
-  অভিনন্দন! আপনি অতিরিক্ত ১০% ছাড় পেয়েছেন!
-</div>
 
 <div class="container">
 
   <section class="categories">
     <div class="category-card">
-      <img src="https://i.ibb.co/85Y2vT6/tws-earphone.png" alt="TWS Earphones" />
-      <h3>TWS Earphones</h3>
-      <a href="#products">Shop Now</a>
+      <img src="image/tws.png" alt="TWS/ Earphones" />
+      <h3>TWS / Headphones</h3>
+      <a href="#tws">Shop Now</a>
     </div>
     <div class="category-card">
-      <img src="https://i.ibb.co/2nCZHVP/bluetooth-speaker.png" alt="Bluetooth Speakers" />
-      <h3>Bluetooth Speakers</h3>
-      <a href="#products">Shop Now</a>
+      <img src="image/accessories.png" />
+      <h3>Accessories</h3>
+      <a href="#Accessories">Shop Now</a>
     </div>
     <div class="category-card">
-      <img src="https://i.ibb.co/YQf5yxY/smart-watch.png" alt="Smart Watches" />
-      <h3>Smart Watches</h3>
-      <a href="#products">Shop Now</a>
+      <img src="image/decoretion.png" alt="Decoretion Item" />
+      <h3>Decoretion Item</h3>
+      <a href="#decoretion">Shop Now</a>
     </div>
     <div class="category-card">
-      <img src="https://i.ibb.co/6YmVPfW/power-bank.png" alt="Power Banks" />
-      <h3>Power Banks</h3>
-      <a href="#products">Shop Now</a>
+      <img src="image/daily life.jpg" alt="Daily Life" />
+      <h3>Daily Life</h3>
+      <a href="#daily">Shop Now</a>
     </div>
     <div class="category-card">
-      <img src="https://i.ibb.co/kyjXj4x/mystery-box.png" alt="Mystery Gift Combos" />
+      <img src="image/combo.png" alt="Mystery Gift Combos" />
       <h3>Mystery Gift Combos</h3>
       <a href="#products">Shop Now</a>
     </div>
   </section>
+  <h1 style="color: red; " align="center">অর্ডারের জন্য প্রোডাক্ট এর ছবির উপরে ক্লিক করুন</h1>
 
-  <section class="featured-products" id="products">
-    <h2>Featured Products</h2>
+  <section class="featured-products" id="decoretion">
+    <h2>Decoretion Products</h2>
     <div class="products-grid">
-      <div class="product-card" onclick="showProductDetail('YW15 ANC TWS', 'https://i.ibb.co/7bZMT3b/yw15-anc-tws.png', 1999)">
-        <img src="https://i.ibb.co/7bZMT3b/yw15-anc-tws.png" alt="YW15 ANC TWS" />
-        <h4>YW15 ANC TWS</h4>
-        <div class="price">৳ 1,999</div>
+      <div class="product-card" onclick="showProductDetail('3D Crystal Ball – Deer ', 'image/deer.jpg', 699)">
+        <img src="image/deer.jpg" alt="3D Crystal Ball – Deer" />
+        <h4>3D Crystal Ball – Deer</h4>
+        <div class="price">৳ 699</div>
+        <h5 align="left" > প্রিমিয়াম কোয়ালিটি <br> মসৃণ ডিজাইন<br>৬ সেমি কমপ্যাক্ট সাইজ<br> ৭ দিনের রিপ্লেসমেন্ট ওয়ারেন্টি </h5 >
+        <h5 >সকল ডিজাইনের Crystal Ball এর ছবির জন্য ইনবক্স করুন<br><br> <a href="https://wa.me/8801521734681">ইনবক্স</a></h5>
       </div>
-      <div class="product-card" onclick="showProductDetail('Philips TAS9001 Speaker', 'https://i.ibb.co/YQCt0h6/philips-speaker.png', 2499)">
-        <img src="https://i.ibb.co/YQCt0h6/philips-speaker.png" alt="Philips TAS9001 Speaker" />
-        <h4>Philips TAS9001 Speaker</h4>
-        <div class="price">৳ 2,499</div>
+      <div class="product-card" onclick="showProductDetail('180ml Volcano Air Humidifier with Night Lamp', 'image/Volcano-humedifire.jpg', 680)">
+        <img src="image/Volcano-humedifire.jpg" alt="180ml Volcano Air Humidifier with Night Lamp" />
+        <h4>180ml Volcano Air Humidifier with Night Lamp</h4>
+        <div class="price">৳ 680</div>
+        <h5 align="left">ধারণক্ষমতা: ১৮০ মিলি<br>বিদ্যুৎ সরবরাহ: ডিসি ৫ ভি (ইউএসবি)<br>কভারেজ এরিয়া: ২০㎡ পর্যন্ত<br>অপারেটিং সময়: একটানা ৪ ঘন্টা পর্যন্ত<br>৭ দিনের রিপ্লেসমেন্ট ওয়ারেন্টি</h5 >
       </div>
-      <div class="product-card" onclick="showProductDetail('Smart Watch', 'https://i.ibb.co/hc3m5Mh/smart-watch.png', 3499)">
-        <img src="https://i.ibb.co/hc3m5Mh/smart-watch.png" alt="Smart Watch" />
-        <h4>Smart Watch</h4>
-        <div class="price">৳ 3,499</div>
+      <div class="product-card" onclick="showProductDetail('16cm Metal Airplan', 'image/ALL-PLAN.jpg', 980)">
+        <img src="image/ALL-PLAN.jpg" alt="16cm Metal Airplan" />
+        <h4>16cm Metal Airplan</h4>
+        <div class="price">৳ 980</div>
+        <h5 align="left">Qatar, Emirates, Singapore, Turkish, Ethihad Airways A380/ Boeing 787 <br> Bnagladesh Airlines 787 <br> British Airways, DHL Aviatin <br><br> <h5>সকল ডিজাইনের Metal Airways এর ছবির জন্য ইনবক্স করুন<br><br> <a  href="https://wa.me/8801521734681">ইনবক্স</a></h5>
+      </div>
+      <div class="product-card" onclick="showProductDetail('USB Dynamic Water Pattern Light', 'image/water lamp.jpg', 1100)">
+        <img src="image/water lamp.jpg" alt="USB Dynamic Water Pattern Light" />
+        <h4>USB Dynamic Water Pattern Light</h4>
+        <div class="price">৳ 1100</div>
+        <h5 align="left">পাওয়ার সোর্স: USB<br> ১৬টি LED লাইট মোড যার উজ্জ্বলতা সামঞ্জস্যযোগ্য<br> সহজ ব্যবহারের জন্য রিমোট কন্ট্রোল<br> আলোর মোড: বহু রঙের LED</h5>
+      </div>
+    </section>
+
+     
+  <section class="featured-products" id="tws">
+    <h2 align="center">TWS / Headphones</h2>
+    <div class="products-grid">
+      <div class="product-card" onclick="showProductDetail('Transparent Ultrapods pro True TWS ', 'image/ultrapods.jpg', 450)">
+        <img src="image/ultrapods.jpg" alt="Transparent Ultrapods pro True TWS " />
+        <h4>Transparent Ultrapods pro True TWS </h4>
+        <div class="price">৳ 450</div>
+        <h5 align="left" > খেলার সময়: ৩-৪ ঘন্টা<br> টক টাইম: ৫ ঘন্টা<br> টাইপ: কানের ভিতরে <br> জল প্রতিরোধী: IP4<br> ব্লুটুথ সংস্করণ: ৫.৩<br> ৭ দিনের রিপ্লেসমেন্ট ওয়ারেন্টি</h5 >
+      </div>
+      <div class="product-card" onclick="showProductDetail('Hoco EW56 Plus ANC True TWS ', 'image/Hoco-EW56-TWS.jpg', 1350)">
+        <img src="image/Hoco-EW56-TWS.jpg" alt="Hoco EW56 Plus ANC True TWS " />
+        <h4>Hoco EW56 Plus ANC True TWS </h4>
+        <div class="price">৳ 1350</div>
+        <h5 align="left" > প্ব্লুটুথ ৫.২<br> ৫ ঘন্টা পর্যন্ত প্লেব্যাক<br> IPX7 জল প্রতিরোধী<br> ৭ দিনের ওয়ারেন্টি </h5 >
+      </div>
+      <div class="product-card" onclick="showProductDetail('Hoco W35 Wireless Headphone ', 'image/hoco-w35-black.jpg', 1399)">
+        <img src="image/hoco-w35-black.jpg" alt="Hoco W35 Wireless Headphone " />   
+        <h4>Hoco W35 Wireless Headphone </h4>
+        <div class="price">৳ 1399</div>
+        <h5 align="left" > ৪০ ঘন্টা পর্যন্ত<br> জলরোধী: IPX5<br> ওজন: ৩৯০ গ্রাম<br> ৭ দিনের ওয়ারেন্টি<br><br> রঙ: Black & Silver</h5><h5 > <a  href="https://wa.me/8801521734681">অন্যান্য কালার</a> </h5 >
+      </div>
+      <div class="product-card" onclick="showProductDetail('Hoco W35 Max Wireless Headphone ', 'image/HOCO-W35-MAX.jpg', 1560)">
+        <img src="image/HOCO-W35-MAX.jpg" alt="Hoco W35 Max Wireless Headphone " />
+        <h4>Hoco W35 Max Wireless Headphone </h4>
+        <div class="price">৳ 1560</div>
+        <h5 align="left" > ৯০ ঘন্টা পর্যন্ত (৮০% ভলিউম)<br> ওজন: ২৬২ গ্রাম<br> ব্যাটারি ক্ষমতা: ৮০০mAh<br> ৭ দিনের ওয়ারেন্টি <br><br>Color: Black/ Silver/ Green/ Blue</h5><h5 > <a  href="https://wa.me/8801521734681">অন্যান্য কালার</a> </h5 >
+      </div>
+    </div>
+   </section>
+
+   <section class="featured-products" id="daily">
+    <h2 align="center">Daily Life</h2>
+    <div class="products-grid">
+      <div class="product-card" onclick="showProductDetail('Multifunctional Portable & Foldable Laptop Table – Wood Color', 'image/wood table.jpeg', 599)">
+        <img src="image/wood table.jpeg" alt="Multifunctional Portable & Foldable Laptop Table – Wood Color" />
+        <h4>Multifunctional Portable & Foldable Laptop Table – Wood Color</h4>
+        <div class="price">৳ 599</div>
+        <h5 align="left" > পোর্টেবল ডিজাইন<br> ভাঁজ করে দ্রুত এবং সহজে ব্যবহারের জন্য সেট করুন<br> আইপ্যাড স্ট্যান্ড হোল্ডার এবং কাপ হোল্ডার সহ<br> হালকা ডিজাইন <br><br>7 Days Warranty (যদি কোনও উৎপাদন ত্রুটি থাকে) </h5 >
+      </div>
+      <div class="product-card" onclick="showProductDetail('Multifunctional Portable & Foldable Laptop Table – Black Color', 'image/black table.jpg', 599)">
+        <img src="image/black table.jpg" alt="Multifunctional Portable & Foldable Laptop Table – Black Color" />
+        <h4>Multifunctional Portable & Foldable Laptop Table – Black Color</h4>
+        <div class="price">৳ 599</div>
+        <h5 align="left" > পোর্টেবল ডিজাইন<br> ভাঁজ করে দ্রুত এবং সহজে ব্যবহারের জন্য সেট করুন<br> আইপ্যাড স্ট্যান্ড হোল্ডার এবং কাপ হোল্ডার সহ<br> হালকা ডিজাইন <br><br>7 Days Warranty (যদি কোনও উৎপাদন ত্রুটি থাকে) </h5 >
+      </div>
+      <div class="product-card" onclick="showProductDetail('YAGE YG-T034 Recharging table Lamp ', 'image/yage-t093-table-lamp-2-.jpg', 750)">
+        <img src="image/yage-t093-table-lamp-2-.jpg" alt="YAGE YG-T034 Recharging table Lamp " />
+        <h4>YAGE YG-T034 Recharging table Lamp </h4>
+        <div class="price">৳ 750</div>
+        <h5 align="left" > সুইচ মোড: টগল + স্পর্শ<br> উষ্ণ সাদা হালকা রঙের তাপমাত্রা<br> ১২০০ mAh লিথিয়াম ব্যাটারি<br> ওজন: ২৪০ গ্রাম<br> ছোট এবং বহনযোগ্য, জায়গা নেয় না<br> উচ্চ মানের হোস ল্যাম্প বডি <br><br>7 Days Warranty (যদি কোনও উৎপাদন ত্রুটি থাকে)  </h5 >
+      </div>
+      <div class="product-card" onclick="showProductDetail('Zepter international Knife Kitchen Set (6pcs) ', 'image/Zepter-international-Knife-.jpg', 999)">
+        <img src="image/Zepter-international-Knife-.jpg" alt="Zepter international Knife Kitchen Set (6pcs) " />
+        <h4>Zepter international Knife Kitchen Set (6pcs) </h4>
+        <div class="price">৳ 999</div>
+        <h5 align="left" >রান্নাঘরের ছুরি (ব্লেডের দৈর্ঘ্য ২০ সেমি)<br> রুটির ছুরি (ব্লেডের দৈর্ঘ্য ২০ সেমি)<br> চপার (ব্লেডের দৈর্ঘ্য ১৭.৮ সেমি)<br> সবজির খোসা ছাড়ানোর যন্ত্র (ব্লেডের দৈর্ঘ্য ৯ সেমি)<br> রান্নাঘরের কাঁচি<br> খোসা ছাড়ানোর যন্ত্র-আঙুলের গার্ড-উপহার মোড়ানো  <br><br>7 Days Warranty (যদি কোনও উৎপাদন ত্রুটি থাকে)  </h5 >
+      </div>
+      
+      
+    </div>
+   </section>
+
+   <section class="featured-products" id="Accessories">
+    <h2 align="center">Accessories</h2>
+    <div class="products-grid">
+      <div class="product-card" onclick="showProductDetail('A4tech Bloody L65 Max Naraka RGB Wired Gaming Mouse ', 'image/A4tech-Blooody-L65-Naraka.jpg', 2799)">
+        <img src="image/A4tech-Blooody-L65-Naraka.jpg" alt="A4tech Bloody L65 Max Naraka RGB Wired Gaming Mouse " />
+        <h4>A4tech Bloody L65 Max Naraka RGB Wired Gaming Mouse</h4>
+        <div class="price">৳ 2799</div>
+        <h5 align="left" > ২০০০ Hz রিপোর্ট রেট<br> ৪M অনবোর্ড মেমোরি<br> আরজিবি লাইটিং ইফেক্টস<br> <br>
+         1-Year Official Warranty</h5 >
+      </div>
+      <div class="product-card" onclick="showProductDetail('GearUP WM30 Transparent Crystal 2.4G + Bluetooth Magnetic Wireless Mouse ', 'image/GEARUP-TRANSPARENT-MOUSE.jpg', 999)">
+        <img src="image/GEARUP-TRANSPARENT-MOUSE.jpg" alt="GearUP WM30 Transparent Crystal 2.4G + Bluetooth Magnetic Wireless Mouse " />
+        <h4>GearUP WM30 Transparent Crystal 2.4G + Bluetooth Magnetic Wireless Mouse </h4>
+        <div class="price">৳ 999</div>
+        <h5 align="left" > একই সময়ে সর্বাধিক ৩টি ডিভাইসের সাথে সংযোগ করুন<br> দীর্ঘ ব্যাটারি লাইফ<br> Type-C চার্জিং পোর্ট<br> ব্যাটারি ক্ষমতা ৪০০mah <br><br> 6 Months Replacement Warranty</h5 >
+      </div>
+      <div class="product-card" onclick="showProductDetail('L01 Mobile Phone Radiator Cooler Fan ', 'image/l01.jpg', 799)">
+        <img src="image/l01.jpg" alt="L01 Mobile Phone Radiator Cooler Fan " />   
+        <h4>L01 Mobile Phone Radiator Cooler Fan </h4>
+        <div class="price">৳ 799</div>
+        <h5 align="left" > ইনপুট কারেন্ট: ১.৫A-২A<br> চার্জিং ইন্টারফেস: ইউএসবি<br> সামঞ্জস্যপূর্ণ ফোন প্রস্থ: ৬৫-৮৫ মিমি<br> শব্দের মাত্রা: কম (নীরব অপারেশন)<br><br>7 days replacement warranty </h5 >
+      </div>
+      <div class="product-card" onclick="showProductDetail('Lexar JumpDrive V100 USB 3.0 Pen Drive – 128GB ', 'image/lexar128.png', 1199)">
+        <img src="image/lexar128.png" alt="Lexar JumpDrive V100 USB 3.0 Pen Drive – 128GB " />
+        <h4>Lexar JumpDrive V100 USB 3.0 Pen Drive – <b style="color: black">128GB</b> </h4>
+        <div class="price">৳ 1199</div>
+        <h5 align="left" > ধারণক্ষমতা: 128 জিবি<br> ইন্টারফেস: ইউএসবি ৩.০<br> সিস্টেম সমর্থিত: পিসি এবং ম্যাক সিস্টেম<br><br> ওয়্যারেন্টি: পণ্যের আজীবন ওয়ারেন্টি</h5 >
+      </div>
+      <div class="product-card" onclick="showProductDetail('Lexar JumpDrive V100 USB 3.0 Pen Drive – 64GB ', 'image/lexar 54.png', 1199)">
+        <img src="image/lexar 54.png" alt="Lexar JumpDrive V100 USB 3.0 Pen Drive – 64GB " />
+        <h4>Lexar JumpDrive V100 USB 3.0 Pen Drive – <b style="color: black">64GB</b> </h4>
+        <div class="price">৳ 1199</div>
+        <h5 align="left" > ধারণক্ষমতা: 64 জিবি<br> ইন্টারফেস: ইউএসবি ৩.০<br> সিস্টেম সমর্থিত: পিসি এবং ম্যাক সিস্টেম<br><br> ওয়্যারেন্টি: পণ্যের আজীবন ওয়ারেন্টি</h5 >
+      </div>
+      <div class="product-card" onclick="showProductDetail('Gearup Thermal Printer & Thermal Paper Rolls Combo ', 'image/Mini-thermal-printer-5-roll.jpg', 1699)">
+        <img src="image/Mini-thermal-printer-5-roll.jpg" alt="Gearup Thermal Printer & Thermal Paper Rolls Combo " />
+        <h4>Gearup Thermal Printer & Thermal Paper Rolls Combo </h4>
+        <div class="price">৳ 1699</div>
+        <h5 align="left" > ব্র্যান্ড: গিয়ার আপ<br> একটি থার্মাল প্রিন্টার<br> ৫ পিএসআই পেপারের সাথে আসে<br><br> 6 Months Replacement Warranty </h5 >
+      </div>
+      
+   
+      <div class="product-card" onclick="showProductDetail('TX30 Pro 12K Ultra HD Android TV Box', 'image/tx 30 pro.png', 2350)">
+        <img src="image/tx 30 pro.png" alt="TX30 Pro 12K Ultra HD Android TV Box" />
+        <h4>TX30 Pro 12K Ultra HD Android TV Box</h4>
+        <div class="price">৳ 2350</div>
+        <h5 align="left" > অ্যান্ড্রয়েড ভার্সন: 15<br> ডিসপ্লে র‍্যাম: 16 GB, র‍ম: 256 GB<br> Wi-Fi সাপোর্ট: ২ GHz / ৫ GHzs<br> ভয়েস কন্ট্রোল রিমোট<br> ১৫০০+ টিভি চ্যানেল ফ্রি<br><br>3 months replacement warranty </h5 >
       </div>
     </div>
   </section>
+
+   
+  
+      
+
+    </div>
+   </section>
+
+   
 
   <button id="orderButton" onclick="openCheckoutForm()">অর্ডার করুন</button>
 
@@ -431,14 +542,14 @@
     <img src="" alt="Product Image" id="productDetailImage" />
     <h3 id="productDetailName"></h3>
     <div class="price" id="productDetailPrice"></div>
-    <button onclick="openCheckoutForm()">অর্ডার করুন</button>
+    <button onclick="openCheckoutForm()" style="margin-top:10px; background:#d32f2f; color:#fff;" >অর্ডার করুন</button>
     <button onclick="closeProductDetail()" style="margin-top:10px; background:#999; color:#fff;">বন্ধ করুন</button>
   </div>
 
   <!-- Checkout Form Section -->
 <section id="checkoutSection" style="display:none;">
-  <form id="checkoutForm" action="https://formsubmit.io/send/electronicgadgets.bd@gmail.com" method="POST">
-    <h3>Order Now & Redeem Your Prize</h3>
+  <form id="checkoutForm" action="https://script.google.com/macros/s/AKfycby3MIl6_2pKjX5piamFLiopQXQLr1WE86a9SAhm8O45jRrd1Y1yhX7sDMiD7xPn2NKk/exec" method="POST">
+    <h3>অর্ডার করুন এবং আপনি আপনার পুরস্কার বুঝে নিন</h3>
 
     <!-- ফর্ম ইনপুট ফিল্ডস -->
     <label for="name">Name</label>
@@ -494,7 +605,7 @@
 </div>
 
 <footer>
-  &copy; ২০২৫ EGBD Shop | All rights reserved.
+  &copy; ২০২৫ Electronic Gadget BD | All rights reserved.
 </footer>
 
 <script>
@@ -502,20 +613,18 @@
   const wheelCanvas = document.getElementById('wheelCanvas');
   const ctx = wheelCanvas.getContext('2d');
   const spinBtn = document.getElementById('spinBtn');
-  const popup = document.getElementById('popup');
   const prizeNameEl = document.getElementById('prize-name');
-  const secondPopup = document.getElementById('secondPopup');
 
   // Prize array with text and discount or prize info
   const prizes = [
     {text: '১০% ছাড়', discountPercent: 10},
     {text: '৫% ছাড়', discountPercent: 5},
-    {text: '১২% ছাড়', discountPercent: 12},
     {text: '৭% ছাড়', discountPercent: 7},
-    {text: '১৫% ছাড়', discountPercent: 15},
     {text: '৫০ টাকা ক্যাশব্যাক', discountAmount: 50},
+    {text: '৫% ছাড়', discountPercent: 5},
     {text: 'ফ্রি শিপিং', discountAmount: 0, freeShipping: true},
     {text: 'অজানা মিস্ট্রি গিফট', discountAmount: 0, mysteryGift: true},
+    {text: '১০% ছাড়', discountPercent: 10},
   ];
 
   const segmentCount = prizes.length;
@@ -621,25 +730,13 @@
     localStorage.setItem('lastSpinDate', new Date());
 
     // Show popup with prize and apply prize to form/page
-    showPrizePopup(selectedPrize.text);
+    
     applyPrizeToPage(selectedPrize);
 
     isSpinning = false;
     spinBtn.disabled = true;  // disable further spins for 7 days
   }
 
-  function showPrizePopup(text) {
-    prizeNameEl.textContent = text;
-    popup.style.display = 'flex';
-
-    if (text.includes('১০%')) {
-      showSecondPopup();
-    }
-  }
-
-  function closePopup() {
-    popup.style.display = 'none';
-  }
 
   function showSecondPopup() {
     // Check again lastSpin date for 7 days restriction
@@ -705,7 +802,7 @@
   const checkoutForm = document.getElementById('checkoutForm');
 
   // Update delivery charge & total price when delivery option changes
-  const deliveryRadios = checkoutForm.querySelectorAll('input[name="delivery"]');
+  const deliveryRadios = checkoutForm.querySelectorAll('input[name="Delivery_Charge"]');
   deliveryRadios.forEach(radio => {
     radio.addEventListener('change', updatePrices);
   });
@@ -731,7 +828,7 @@
     }
 
     let deliveryCharge = 0;
-    const selectedDelivery = checkoutForm.querySelector('input[name="delivery"]:checked');
+    const selectedDelivery = checkoutForm.querySelector('input[name="Delivery_Charge"]:checked');
     if (selectedDelivery) {
       deliveryCharge = freeShipping ? 0 : parseInt(selectedDelivery.value);
     }
@@ -751,21 +848,17 @@
     applyPrizeToPage(selectedPrize);
   }
 
-  // Listen for delivery charge change to update prices
-  deliveryRadios.forEach(radio => {
-    radio.addEventListener('change', updatePrices);
-  });
 
-
-
-</script>
-<script>
-  // ফর্ম সাবমিট হলে পপআপ দেখানো
+ // ফর্ম সাবমিট হলে পপআপ দেখানো
   document.getElementById('checkoutForm').addEventListener('submit', function() {
     setTimeout(() => {
       document.getElementById('orderSuccessPopup').style.display = 'flex';
     }, 500); // ফর্ম সাবমিটের একটু পর দেখাবে
   });
+
 </script>
+
+ 
+
 </body>
 </html>
